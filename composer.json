@@ -1,0 +1,47 @@
+{
+    "name": "narrowspark/automatic-security-audit",
+    "type": "composer-plugin",
+    "description": "A composer plugin that checks if your application has known security vulnerabilities.",
+    "keywords": [
+        "narrowspark",
+        "viserio",
+        "discovery",
+        "automatic",
+        "configurators",
+        "skeleton",
+        "library",
+        "composer",
+        "audit",
+        "security"
+    ],
+    "homepage": "http://github.com/narrowspark/automatic",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Bannert",
+            "email": "d.bannert@anolilab.de",
+            "homepage": "http://www.anolilab.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-mbstring": "*",
+        "composer-plugin-api": "^1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "class": "Narrowspark\\Automatic\\Security\\SecurityPlugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Narrowspark\\Automatic\\Security\\": "/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/narrowspark/automatic/issues",
+        "source": "https://github.com/narrowspark/automatic"
+    }
+}
