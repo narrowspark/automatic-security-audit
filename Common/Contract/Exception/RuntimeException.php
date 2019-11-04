@@ -11,10 +11,10 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Narrowspark\Automatic\Security\Contract\Exception;
+namespace Narrowspark\Automatic\Security\Common\Contract\Exception;
 
-use Throwable;
+use RuntimeException as BaseRuntimeException;
 
-interface Exception extends Throwable
+final class RuntimeException extends BaseRuntimeException implements Exception
 {
 }
